@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Learning Objects </title>
+        <script>
+            var cadi = {
+                        make: "GM",
+                        model: "Cadillac",
+                        year: 1955,
+                        color: "tan",
+                        passengers: 5,
+                        convertible: false,
+                        mileage: 12892,
+                        started: false,
+                        fuel:0,
+                        start: function(){
+                            this.started=true;
+                        },
+                        stop: function(){
+                            this.started=false;
+                        },
+                        drive: function() {
+                            if (this.started) {
+                                    if(this.fuel>0){
+                                        alert(this.make + " " +this.model + " go!");
+                                        this.fuel=this.fuel-1;
+                                    } else {
+                                        alert("out of fuel");
+                                    }
+                            } else {
+                            alert("You need to start the engine first.");
+                            }
+                        },
+                        addFuel: function(amount){
+                            this.fuel=this.fuel+amount;
+                        }
+            };
+            var chevy = {
+                        make: "Chevy",
+                        model: "Bel Air",
+                        year: 1957,
+                        color: "red",
+                        passengers: 2,
+                        convertible: false,
+                        mileage: 1021,
+                        started: false,
+                        fuel:0,
+                        start: function(){
+                            this.started=true;
+                        },
+                        stop: function(){
+                            this.started=false;
+                        },
+                        drive: function() {
+                            if (this.started) {
+                                    if(this.fuel>0){
+                                        alert(this.make + " " +this.model + " go!");
+                                        this.fuel=this.fuel-1;
+                                    } else {
+                                        alert("out of fuel");
+                                    }
+                            } else {
+                            alert("You need to start the engine first.");
+                            }
+                        },
+                        addFuel: function(amount){
+                            this.fuel=this.fuel+amount;
+                        }
+            };
+            var taxi = {
+                        make: "Webville Motors",
+                        model: "Taxi",
+                        year: 1955,
+                        color: "yellow",
+                        passengers: 4,
+                        convertible: false,
+                        mileage: 281341,
+                        started: false,
+                        fuel:0,
+                        start: function(){
+                            this.started=true;
+                        },
+                        stop: function(){
+                            this.started=false;
+                        },
+                        drive: function() {
+                            if (this.started) {
+                                    if(this.fuel>0){
+                                        alert(this.make + " " +this.model + " go!");
+                                        this.fuel=this.fuel-1;
+                                    } else {
+                                        alert("out of fuel");
+                                    }
+                            } else {
+                            alert("You need to start the engine first.");
+                            }
+                        },
+                        addFuel: function(amount){
+                            this.fuel=this.fuel+amount;
+                        }
+                };
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
