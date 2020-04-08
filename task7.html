@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamically change HTML page</title>
+        <script>
+            function init(){
+            var variable1 = document.getElementById("one");
+            variable1.innerHTML="WOW i changed html";
+            console.log(variable1.innerHTML);
+            }
+            window.onload=init;
+
+        </script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <p id="one">All is well</p>
+            <p id="two">Nothing to report</p>
+            <p id="three">All system is a go</p>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
