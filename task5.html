@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Learning Objects </title>
+<script>
+var taxi ={make:"Lada",model:"Vesta",year:2010,color:"white",passengers:4,convertible:false,mileage:100000};
+function prequal(car){
+    if(car.mileage>50000){
+        return false;
+    } else if(car.year>2017){
+        return false;
+    }
+    return true;
+}
+
+var worthTakeLook=prequal(taxi);
+if(worthTakeLook){
+    console.log("You got to check this"+taxi.make+" , "+taxi.model);
+} else {
+    console.log("Pass this "+taxi.model+" on");
+}
+
+</script>
+</head>
+<body></body>
+</html>
